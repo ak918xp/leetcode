@@ -1,3 +1,5 @@
+package JianZhiOffer;
+
 public class searchInsert {
     public static void main(String[] args){
         int[] nums = new int[]{1,3,4,5};

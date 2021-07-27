@@ -1,3 +1,5 @@
+package JianZhiOffer;
+
 public class findNumberIn2DArray {
 
     public static boolean findNumberIn2DArray(int[][] matrix, int target) {

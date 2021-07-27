@@ -1,3 +1,5 @@
+package JianZhiOffer;
+
 public class minArray {
 
     public static void main(String[] args) {

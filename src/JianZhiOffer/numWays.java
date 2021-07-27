@@ -1,3 +1,5 @@
+package JianZhiOffer;
+
 public class numWays {
     public static int numWays(int n) {
         if(n==0||n==1){

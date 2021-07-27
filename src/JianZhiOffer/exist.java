@@ -1,3 +1,5 @@
+package JianZhiOffer;
+
 public class exist {
     public static void main(String[] args){
         String word="ABCCED";
