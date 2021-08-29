@@ -1,5 +1,7 @@
 package JianZhiOffer;
 
+import java.util.PriorityQueue;
+
 /**
  * @author lihaoyuan
  * @version 1.0
@@ -7,7 +9,26 @@ package JianZhiOffer;
  */
 public class getLeastNumbers {
     public static void main(String[] args){
+        int[] nums = new int[]{3,2,1};
+        int k=2;
+        int[] res = getLeastNumbers2(nums,k);
+        for(int a:res){
+            System.out.println(a);
+        }
+    }
 
+    public static int[] getLeastNumbers2(int[] arr,int k){
+        PriorityQueue<Integer> queue = new PriorityQueue<>(k);
+        for(int i=0;i<arr.length;i++){
+            queue.add(arr[i]);
+        }
+        int[] res  =new int[k];
+        int count=0;
+        while(k>0){
+            res[count++]=queue.poll();
+            k--;
+        }
+        return res;
     }
 
     public static int[] getLeastNumbers(int[] arr, int k) {
